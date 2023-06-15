@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="assets/osama.svg">
+        <navbar  class="nav">
+            <a href="#home" class="nav-a"><b>Home</b></a>
+            <a href="#about" class="nav-a"><b>About</b></a>
+            <a href="#projects" class="nav-a"><b>Projects</b></a>
+            <a href="#contact" class="nav-a" onclick="openform();return false"><b>Contact</b></a>
+        </navbar>
+    </header>
+    <img id="home"src="assets/hero2.jpg" class="hero-image">
+    <div  class="intro">
+        <h1>
+            A practical web developer:
+        </h1>
+        <p>"Combining creativity, strategy, and meticulous attention to detail to deliver visually stunning digital
+            experiences."</p>
+    </div>
+    <section id="about">
+        <h2 class="subheading">ABOUT</h2>
+        <div class="about">
+            <img class="about-img" src="assets/about image.jpg">
+            <p class="para">
+                "Hello, I'm <b>Osama Arif Khan</b>, an experienced web developer with a strong passion for creating
+                visually
+                appealing and user-friendly websites.
+                With expertise in front-end technologies like HTML, CSS, and JavaScript, as well as a solid
+                understanding of
+                back-end development,<br><br>
+                I am equipped to deliver dynamic and interactive web applications. I thrive on collaboration and
+                effective
+                communication, ensuring successful project delivery.
+                Browse through my portfolio to see examples of my work and let's discuss how I can bring your ideas to
+                life."
+            </p>
+        </div>
+    </section>
+    <h2 class="subheading">PROJECTS</h2>
+    <section class="project-container" id="projects">
+        <div class="project-div">
+            <img class="project-image" src="assets/web.png" alt="icon of www, circle with lines passing through it">
+            <h3 class="project-heading">Portfolio Development.</h3>
+            <p>By leveraging the power of HTML, CSS, and JavaScript, I have created a website that is not only aesthetically pleasing but also functional and intuitive. It serves as a testament to my dedication and expertise in web development, reflecting my commitment to delivering high-quality solutions for my clients.</p>
+        </div>
+        <div class="project-div">
+            <img class="project-image"  src="assets/game.png" alt="a playstaion controller icon">
+            
+            <h3 class="project-heading">Simon-Game.</h3>
+            <p>Thanks to the power of JavaScript, "Simon Game" brings the elements of interactivity and responsiveness to the forefront. Each button responds to user clicks, providing instant feedback and an engaging gameplay experience. The game tracks your progress, keeping score and rewarding you as you successfully complete each level.</p>
+        </div>
+        <div class="project-div">
+            <img class="project-image"  src="assets/weather.png" alt="clounds pouring rain with sun hiding at the back icon">
+            <h3 class="project-heading">Weather App.</h3>
+            <p>Using the power of React, the Weather App fetches weather data from reliable APIs, allowing you to access accurate and up-to-date information for your chosen location. Whether you want to check the current temperature, humidity, wind speed, or view a multi-day forecast, the app provides comprehensive weather details at your fingertips.</p>
+        </div>
+        <div class="project-div">
+            <img class="project-image" src="assets/shoping.png" alt="a website interface with shopiing elements and a lock sign">
+            <h3 class="project-heading">Delivery App</h3>
+            <p>The app leverages React Native's ability to access native device features, such as GPS, camera, and push notifications. This enables users to track their orders in real-time, receive timely updates on delivery status, and even communicate with delivery personnel directly within the app.</p>
+        </div>
+    </section>
+            <button id="contactBtn" class="open-button" onclick="openform();return false">LET'S TALK!</button>
+        <form id="contact" class="contact-us">
+            <button id="closeBtn" class="btn-close" onclick="closeform();return false">	&#10761</button>
+            <h2>Contact Details</h2>
+            <input id="fname" class="input-text" type="text" placeholder="Enter first name...."><br><br>
+            <input type="text" class="input-text" id="lname" placeholder="Enter last name...."><br><br>
+            <input type="email" class="input-text" id="email" placeholder="Enter email adress...."><br><br>
+            <p>Enter your gender: </p>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label><br><br>
+            <input id="sumbitBtn" class="btn-submit" type="submit">
+        </form>
+       
+    <footer class="footer">
+         <p class="copyright">This site is Copyrighted to Osama Arif Khan</p>
+         <img class="icon-footer" src="assets/facebook.png" alt="facebook logo">
+         <img class="icon-footer" src="assets/linkedin.png" alt="linkedin logo">
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
